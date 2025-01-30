@@ -9,4 +9,6 @@ app.get("/", async (req, res) => {
   return res.json({ message: "API OK" });
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000 , () => {
+  return console.log(`Server is running on port ${process.env.PORT || 3000}`);
+});
